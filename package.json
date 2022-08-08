@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "portfolio project",
+  "main": "server.js",
+  "scripts": {
+    "test": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mukund05/Portfolio.git"
+  },
+  "author": "Mukund Thakur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mukund05/Portfolio/issues"
+  },
+  "homepage": "https://github.com/Mukund05/Portfolio#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express.js": "^1.0.0",
+    "nodemailer": "^6.7.7",
+    "nodemon": "^2.0.19"
+  }
+}
