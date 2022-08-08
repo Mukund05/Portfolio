@@ -1,9 +1,9 @@
-const express=require('express.js');
+const express=require('express');
 const path=require('path');
 
 let initialpath=path.join(__dirname,"public");
 
-let app=express;
+let app=express();
 app.use(express.static(initialpath));
 app.get('/',(req,res)=>{
     res.sendFile(initialpath,'index.html');
