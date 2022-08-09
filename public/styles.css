@@ -47,7 +47,8 @@ body{
 .link:hover:not(.active){
     opacity: 0.7;
 }
-.link.active::before{
+.link.active::before,
+.seprator::before{
     content: '';
     position: absolute;
     bottom: 0;
@@ -59,7 +60,8 @@ body{
     background: #fff;
 
 }
-.link.active::after{
+.link.active::after,
+.seprator::after{
     content: '';
     position: absolute;
     bottom: 2px;
@@ -86,7 +88,7 @@ body{
     width: 50%;
 }
 .hero-heading{
-    font-size: 5rem;
+    font-size: 4rem;
     text-transform: capitalize;
     font-weight: 500;
 }
@@ -132,6 +134,7 @@ body{
     margin-bottom: 50px;
 }
 .profile-img{
+    margin-top: 20px;
     max-width: 40%;
     height: auto;
     border-radius: 50%;
@@ -144,4 +147,64 @@ body{
     color: #fff;
     text-transform: capitalize;
     border: none;
+}
+
+/* about section */
+.about{
+    margin-top: 40px;
+    width: 100%;
+    height: auto;
+    padding: 50px 10vw;
+}
+.heading{
+    text-align: center;
+    font-weight: 500;
+    font-size: 3.5rem;
+    text-transform: capitalize;
+}
+.sub-heading{
+    text-align: center;
+    font-size: 1rem;
+    margin: 10px;
+    opacity: 0.7;
+}
+
+.seprator{
+    width: 25%;
+    margin: 20px auto;
+    position: relative;
+}
+
+.about-image{
+    height: 450px;
+    width: 350px;
+}
+.about-me-container{
+    margin: 150px 0 100px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-gap: 50px;
+}
+.left-col .right-col{
+    position: relative;
+}
+.left-col::before{
+    content: 'yes its me';
+    text-transform: capitalize;
+    position: absolute;
+    right: 0;
+    top: -20px;
+
+}
+.left-col::after{
+    content: '';
+    position: absolute;
+    top: -10px;
+    right: 80px;
+    width: 50px;
+    height: 2px;
+    background: #fff;
+    transform-origin: right;
+    transform: rotate(-30deg);
 }
